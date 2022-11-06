@@ -2,7 +2,7 @@
   --card-title-border-color: #5EE35B;
   --card-color-primary: #5EE35B;
   --card-bg-color: #1B181D;
-  --bg: url(./Assets/bg.svg);
+  --bg: url(../Assets/bg.svg);
 }
 
 * {
@@ -21,7 +21,7 @@ a{
 }
 
 body {
-  background-image: url(./Assets/bg.svg);
+  background-image: url(../Assets/bg.svg);
   background-color: #121214;
   background-position-x: center;
   background-position-y: 55.6%;
@@ -208,12 +208,45 @@ forçados a ficarem na mesma linha ou se podem ser quebradas em
 varias linhas. Se o argumento for valido, ele define a direção 
 em que as linhas são empilhadas.
 */
-@media (min-width: 700px){
+@media (min-width: 1024px){
   #cards{
     max-width: 670px;
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  .floating-container, .floating-button{
+    max-width: 670px;
+    width: 12px
+  }
+
+  #botoes{
+    max-width: 670px;
+    width: 12px
+  }
+  
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #1B181D; 
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #281635; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1B181D; 
 }
 
 @import url("https://fonts.googleapis.com/css?family=Roboto");
