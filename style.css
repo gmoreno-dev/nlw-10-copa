@@ -21,8 +21,8 @@ a{
 }
 
 body {
-  background-color: #121214;
   background-image: url(./assets/bg.svg);
+  background-color: #121214;
   background-position-x: center;
   background-position-y: 55.6%;
   background-size: cover;
